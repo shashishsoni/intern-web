@@ -162,6 +162,12 @@ html,body {
     display: flex;
     align-items: center;
   }
+
+@media screen and (min-width: 1470px) {
+    .features {
+      margin-top: 60px;
+    }
+  }
   
   .feature-reverse {
     flex-direction: reverse;
