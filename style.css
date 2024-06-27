@@ -328,7 +328,7 @@ html, body {
     box-sizing: border-box;
     margin-bottom: 2px;
     border-radius: 57px;
-    border: 12px solid white;
+    border: 12px solid rgb(0, 0, 0);
     height: 625px;
  }
 
