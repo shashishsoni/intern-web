@@ -221,6 +221,20 @@ html, body {
      z-index: 2;
      margin-top: 55px;
  }
+
+ @media screen and (min-width: 1360px){
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 2;
+        margin-top: -20px;
+    }
+ }
  
  .text-content {
      flex: 1;
@@ -261,6 +275,20 @@ html, body {
     border-radius: 57px;
     border: 12px solid white;
     height: 625px;
+ }
+
+ @media screen and (min-width: 1360px) {
+    .video-content video {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: -105px;
+        border-radius: 57px;
+        border: 12px solid white;
+        height: 515px;
+    }
  }
  
  .image-content img {
