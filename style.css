@@ -407,7 +407,7 @@ html, body {
     }
  }
 
- @media screen and (max-width: 1920px) {
+ @media screen and (max-width: 1660px) {
     .features {
         display: flex;
         flex-direction: column;
