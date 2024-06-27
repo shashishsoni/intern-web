@@ -85,12 +85,13 @@ html, body {
      order: 1;
  }
 .circles{
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 96%;
     padding-right: 40px;
-    height: 82%;
+    height: 90%;
     overflow: hidden;
     border-bottom: 5px solid white;
 }
@@ -206,7 +207,7 @@ html, body {
      justify-content: center;
      align-items: center;
      padding: 2em 1em;
-     height: 85vh;
+     height: 92vh;
      background-size: cover;
      width: 100%;
      box-sizing: border-box;
