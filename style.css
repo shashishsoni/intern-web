@@ -406,6 +406,21 @@ html, body {
         
     }
  }
+
+ @media screen and (max-width: 1920px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em 1em;
+        background-color: #111;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        
+    }
+ }
  
  h2 {
      margin-bottom: 50px;
