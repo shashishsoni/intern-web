@@ -441,9 +441,7 @@ html, body {
     gap: 4em;
     padding: 4em 2em;
     background-color: #111;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px 100px 100px 100px;
     box-sizing: border-box;
 }
 
@@ -514,7 +512,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
     .feature, .feature:nth-child(even) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .feature-image, .feature-video, .feature-content {
@@ -888,8 +886,7 @@ html, body {
  }
  
  .contant-container {
-    max-width: 1200px;
-    margin: 100px auto
+    margin: 100px 100px 100px;
 }
 
 .contant-container h1 {
