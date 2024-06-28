@@ -260,8 +260,6 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
-        width: 100%;
         box-sizing: border-box;
         padding: 0 20px;
         z-index: 2;
@@ -294,6 +292,15 @@ html, body {
  @media screen and (min-width: 1360px) {
     .text-content h1 {
         font-size: 80px;
+        margin-bottom: 0.5em;
+        font-family: 'NewAleniaThin', sans-serif;
+        font-style: italic;
+    }
+ }
+
+ @media screen and (max-width: 1290px) {
+    .text-content h1 {
+        font-size: 85px;
         margin-bottom: 0.5em;
         font-family: 'NewAleniaThin', sans-serif;
         font-style: italic;
@@ -357,13 +364,13 @@ html, body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    margin-bottom: 2px;
+    margin-bottom: -105px;
     border-radius: 57px;
     border: 12px solid rgb(0, 0, 0);
     height: 625px;
  }
 
- @media screen and (min-width: 1360px) {
+ @media screen and (max-width: 1377px) {
     .video-content video {
         flex: 1;
         display: flex;
@@ -377,14 +384,14 @@ html, body {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1290px) {
     .video-content video {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        margin-bottom: -105px;
+        margin-bottom: -40px;
         border-radius: 57px;
         border: 12px solid rgb(0, 0, 0);
         height: 515px;
