@@ -25,11 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
       el: ".swiper-pagination"
     }
   });
-
-  function toggleMenu(e) {
-    e.classList.toggle("active");
-    document.querySelector("aside").classList.toggle("active");
-  }
   
   document.addEventListener("DOMContentLoaded", () => {
     const faqItems = document.querySelectorAll(".faq-item");
@@ -39,4 +34,35 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.toggle("active");
         });
     });
+});
+
+document.addEventListener('scroll', function () {
+  const videoSection = document.querySelector('.mv-container');
+  const videoElement = document.querySelector('.middle-video video');
+  const rect = videoSection.getBoundingClientRect();
+  const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+  if (inView) {
+    document.body.classList.add('highlighted-bg');
+    videoElement.classList.add('highlighted-video');
+  } else {
+    document.body.classList.remove('highlighted-bg');
+    videoElement.classList.remove('highlighted-video');
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  function handleResize() {
+    const video = document.getElementById('video');
+    const videoSource = document.getElementById('videoSource');
+    if (window.innerWidth <= 1024) {
+      videoSource.src = './video/landscape.mp4'; 
+    } else {
+      videoSource.src = './video/video3.mp4';
+    }
+    video.load();
+  }
+
+  window.addEventListener('resize', handleResize);
+  handleResize();
 });
