@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function handleResize() {
     const video = document.getElementById('video');
     const videoSource = document.getElementById('videoSource');
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 1090) {
       videoSource.src = './video/landscape.mp4'; 
     } else {
       videoSource.src = './video/video3.mp4';
