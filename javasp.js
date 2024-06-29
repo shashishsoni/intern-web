@@ -26,16 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  document.addEventListener("DOMContentLoaded", () => {
-    const faqItems = document.querySelectorAll(".faq-item");
-
-    faqItems.forEach(item => {
-        item.querySelector("h4").addEventListener("click", () => {
-            item.classList.toggle("active");
-        });
-    });
-});
-
 document.addEventListener('scroll', function () {
   const videoSection = document.querySelector('.mv-container');
   const videoElement = document.querySelector('.middle-video video');
@@ -65,4 +55,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener('resize', handleResize);
   handleResize();
+});
+
+document.querySelectorAll('.faq-item h2').forEach(item => {
+  item.addEventListener('click', () => {
+      const parent = item.parentElement;
+      const isActive = parent.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+      });
+      if (!isActive) {
+          parent.classList.add('active');
+      }
+  });
 });
