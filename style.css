@@ -398,6 +398,21 @@ nav a {
   height: 625px;
 }
 
+@media screen and (max-width: 1660px) and (min-width:1487px) {
+  .video-content video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: -44px;
+    border-radius: 57px;
+    margin-top: 75px;
+    border: 12px solid rgb(0, 0, 0);
+    height: 515px;
+  }
+}
+
 @media screen and (max-width: 1488px) and (min-width:1440px) {
   .video-content video {
     flex: 1;
