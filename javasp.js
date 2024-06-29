@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function handleResize() {
     const video = document.getElementById('video');
     const videoSource = document.getElementById('videoSource');
-    if (window.innerWidth <= 1090) {
+    if (window.innerWidth <= 1024) {
       videoSource.src = './video/landscape.mp4'; 
     } else {
       videoSource.src = './video/video3.mp4';
@@ -69,3 +69,29 @@ document.querySelectorAll('.faq-item h2').forEach(item => {
       }
   });
 });
+
+//scoller in x direction js
+const scrollers = document.querySelectorAll(".scroller");
+
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    
+    scroller.setAttribute("data-animated", true);
+    
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    
+    for (let i = 0; i < 2; i++) { // Duplicate the content twice
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", true);
+        scrollerInner.appendChild(duplicatedItem);
+    });
+  }
+});
+}

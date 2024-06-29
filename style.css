@@ -194,7 +194,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width:980px) {
   .hero-content {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -202,9 +202,39 @@ nav a {
   }
 
   .video-content video {
-    width: 615px;
-    max-height: 354px;
-    margin: 0 0 auto;
+    margin-bottom: -65px !important;
+    margin-top: 85px;
+    max-block-size: 281px;
+  }
+
+  .text-content {
+    flex: 2;
+    text-align: center;
+  }
+
+  .text-content .size {
+    font-size: 30px;
+  }
+
+  .get-started {
+    font-size: 1.2em;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .hero-content {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .video-content video {
+    max-height: 253px;
+    margin: 0 auto;
+    margin-bottom: -63px !important;
+    margin-top: 70px;
+
   }
 
   .text-content {
@@ -227,10 +257,8 @@ nav a {
   align-items: center;
   padding: 2em 1em;
   height: 90vh;
-  background-size: cover;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .hero-content {
@@ -458,7 +486,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1290px) and (min-width: 1024px) {
   .video-content video {
     flex: 1;
     display: flex;
@@ -736,23 +764,43 @@ footer {
   margin-bottom: 2em;
 }
 
-.company-logos {
+.scroller {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.scroller__inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
 }
 
-.company-logos img {
-  max-height: 115px;
-  width: auto;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+.scroller__inner img {
+  max-width: 100px;
+  margin: 0 auto;
 }
 
-.company-logos img:hover {
-  opacity: 1;
+.scroller[data-animated="true"] .scroller__inner {
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .last-container {
