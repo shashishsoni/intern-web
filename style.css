@@ -129,8 +129,8 @@ header {
 
 .video-content video {
   margin-bottom: -20px !important;
-    width: 435px;
-    height: 257px !important;
+  width: 365px;
+  height: 218px !important;
 }
 
 .hero-content {
@@ -145,7 +145,7 @@ header {
 
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 395px) and (min-width: 385px) {
   .link {
     visibility: hidden;
   }
@@ -153,6 +153,7 @@ header {
   .video-content video  {
     width: 347px;
     height: 207px !important;
+    margin-top: -100px;
   }
 
   .faq {
@@ -235,7 +236,7 @@ header {
 }
 
 .circles {
-  width: 104% !important;
+  width: 105% !important;
 }
 
 .footer {
@@ -255,11 +256,16 @@ header {
 .hero-content {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 120px !important;
+  margin-top: 200px !important;
 
 }
 .text-content h1 {
   font-size: 30px !important;  
+}
+
+.contant-container h1 {
+  margin-bottom: -50px !important;
+    font-size: 20px !important;
 }
 }
 
@@ -1172,7 +1178,6 @@ footer {
 }
 
 .last-last-container {
-    background-color: #e5e5e5;
     height: 100vh;
     align-items: center;
     justify-content: center;
