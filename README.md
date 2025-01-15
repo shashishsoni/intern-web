@@ -58,10 +58,6 @@ As an intern project, the HTML and CSS have been structured to be simple and ext
 
 Feel free to modify the scroller animations, FAQ transitions, or video handling for performance optimizations.
 
-## License
-
-This project is for internal use and learning purposes. Licensed under the MIT License.
-
 <h1 style = "text-align: center">OutPut Of The Code</h1>
 
 ![INFINTY - The Ultimate Mini-site for Creators (1) (1)](https://github.com/user-attachments/assets/88f3d2e1-1f92-4fbf-a668-6ffc83de6998)
